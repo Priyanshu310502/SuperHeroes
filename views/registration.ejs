@@ -1,0 +1,40 @@
+<%-include('./partials/header.ejs') %> <%-include('./partials/footer.ejs') %>
+<%-include('./partials/navbar.ejs') %>
+<form action="/SignUp" method="post">
+  <div class="container mt-5">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Name</label>
+      <input
+        type="name"
+        name="name"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Name"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label" name="email"
+        >Email address</label
+      >
+      <input
+        type="email"
+        name="email"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Password</label>
+      <input
+        type="password" 
+        name="password"
+        class="form-control"
+        id="exampleFormControlInput1"
+        placeholder="Password"
+      />
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
